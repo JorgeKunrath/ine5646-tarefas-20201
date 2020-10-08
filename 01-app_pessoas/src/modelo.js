@@ -25,8 +25,16 @@ class Pessoa {
  * @returns [Pessoa]
  */
 function selecionaPessoas (pessoas, idadeLimite) {
+
+  let selecionados = []
+
+  pessoas.map(pessoa => {
+    if(pessoa.__idade > idadeLimite)
+      selecionados.push(pessoa)
+  })
+
   // FIXME Bug 
-  return pessoas
+  return selecionados
 }
 
 // Dados fictícios

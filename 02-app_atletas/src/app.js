@@ -6,7 +6,7 @@ import express from 'express'
 import {dados} from './dados'
 import {consultaInicial, consultaPesquisaPorAltura} from './controle'
 
-const porta = 3000
+const porta = 3002
 const msgNoAr = `Servidor no ar, porta ${porta}`
 const opcoes = {
   key: fs.readFileSync(path.resolve(__dirname, '../cert/key.pem')),

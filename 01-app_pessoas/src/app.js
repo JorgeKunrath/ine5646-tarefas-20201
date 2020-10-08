@@ -9,7 +9,7 @@ const opcoes = {
   cert: fs.readFileSync(path.resolve(__dirname, '../cert/cert.pem'))
 }
 
-const porta = 3000
+const porta = 3001
 const msgNoAr = `Servidor no ar escutando na porta ${porta}...`
 const servidor = https.createServer(opcoes, (req, res) => atendeRequisicao(res))
 
