@@ -9,7 +9,7 @@ const opcoes = {
   cert: fs.readFileSync(path.resolve(__dirname, '../cert/cert.pem'))
 }
 
-const PORTA = 3000
+const PORTA = 3002
 const app = express()
 
 app.use(express.static(path.resolve(__dirname, '../publico')))
