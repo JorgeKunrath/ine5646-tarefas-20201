@@ -59,10 +59,13 @@ function montaLinha (idFilmeSelecionado, idTitulo, quandoSelecionado) {
 function montaBotao (idFilmeSelecionado, idFilme, quandoSelecionado) {
   let botao
   // FIXME : Bug! Botão só deve ser exibido para filme não selecionado.
+  // fix feito, mas tá tosco 😬
     botao =
         <BotaoDetalhes
           id={idFilme}
-          quandoClicado={quandoSelecionado}/>
+          quandoClicado={quandoSelecionado}
+          filmeSelecionado={idFilmeSelecionado}
+        />
 
   return botao
 }

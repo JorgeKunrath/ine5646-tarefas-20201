@@ -5,6 +5,7 @@ const BotaoDetalhes = (props) =>  {
 
   let conteudo =
       <button
+        style={props.filmeSelecionado == props.id ? {display: "none"} : {}}
         className='button is-small is-rounded is-primary'
         onClick={() => props.quandoClicado(props.id)}>
         Detalhes
