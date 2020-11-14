@@ -47,7 +47,6 @@ const DataNASA = (props) => {
 
   return (
     <input className='input'
-    // style={{border: "2px solid red"}}
       type='text'
       title='Exemplo: 2019-03-27'
       placeholder='AAAA-MM-DD'
